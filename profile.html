@@ -12,11 +12,80 @@
     <title>Profile</title>
 </head>
 <style>
+body {
+  background-color: black;
+}
+h1 {
+  color: red;
+  font-family: Arial;
+  text-align: center;
+}
 
+h5 {
+  color: white;
+}
 
+h6 {
+    color: white;
+}
 
+p {
+  color: red;
+  margin-right: auto;
+  text-align: left;
+}
 
-  
+.edit {
+        border: solid 1px;
+        border-color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.5);
+        display: inline;
+        font-size: 12px;
+        padding: 7px 15px;
+}
+.maturityText {
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 3px;
+      }
+.checkboxText {
+        font-weight: 400;
+        font-size: 15px;
+      }
+
+      .profileButton {
+        border-color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.5);
+        border-radius: 0;
+      }
+
+      .profileButton:hover {
+        border-color: red;
+        background-color: red;
+        color: white;
+      }
+
+      .profileButton:focus {
+        border-color: white;
+        background-color: white;
+        color: #221f20;
+        box-shadow: none;
+      }
+
+      .profileButton:active {
+        border-color: white;
+        background-color: white;
+        color: #221f20;
+        box-shadow: none;
+      }
+      select {
+        background-color: black;
+        color: white;
+        border-color: white;
+        text-align: center;
+        height: 30px;
+        width: 100px;
+      }
 </style>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark navbarBG py-0 px-4">
@@ -53,8 +122,8 @@
           src="assets/avatar.png"
           class="rounded"
           alt=""
-          width="130px"
-          height="130px"
+          width="200px"
+          height="200px"
         />
       </div>
       <div class="col-5 pl-0">
