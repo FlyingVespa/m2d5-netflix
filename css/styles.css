@@ -1,0 +1,29 @@
+h1 {
+  color: red;
+  font-family: Arial;
+  text-align: center;
+}
+
+.coverimage {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+}
+
+.coverimage {
+  width: 30vh;
+  padding: 0 2px;
+  transition: 250ms all;
+}
+
+.coverimage:hover {
+  overflow: visible;
+  margin: 0 40px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+button .arrow-left:hover {
+  background-color: black;
+}

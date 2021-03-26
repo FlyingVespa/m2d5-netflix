@@ -1,18 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
     <title>Netflix</title>
   </head>
   <body>
-     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+      <div class="media-slider m-3">
+        <h5 class="text mt-1 mb-4">Watch List</h5>
+        <div id="watchlist" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="media-row">
+                <div class="row">
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/3-1.jpg" />
+                  </div>
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/3-2.jpg" />
+                  </div>
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/3-3.jpg" />
+                  </div>
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/3-4.jpg" />
+                  </div>
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/4-1.jpg" />
+                  </div>
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/4-2.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media-row">
+                <div class="row">
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/3-1.jpg" />
+                  </div>
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/3-2.jpg" />
+                  </div>
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/3-3.jpg" />
+                  </div>
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/3-4.jpg" />
+                  </div>
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/4-1.jpg" />
+                  </div>
+                  <div class="col-md-2 p-5">
+                    <img class="coverimage" src="./assets/media/4-2.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            id="arrow-left"
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#watchlist"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            id="arrow-right"
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#watchlist"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
   </body>
 </html>
