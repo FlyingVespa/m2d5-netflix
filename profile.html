@@ -60,8 +60,8 @@ p {
       }
 
       .profileButton:hover {
-        border-color: red;
-        background-color: red;
+        border-color: #564d4d;
+        background-color:#564d4d;
         color: white;
       }
 
@@ -83,8 +83,12 @@ p {
         color: white;
         border-color: white;
         text-align: center;
-        height: 30px;
-        width: 100px;
+        height: 40px;
+        width: 140px;
+      }
+
+      hr {
+        color: white;
       }
 </style>
 <body>
@@ -102,7 +106,7 @@ p {
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <a class="navbar-brand" href="index.html"
-        ><img src="assets/logo.jpg" alt="logo" style="width: 100px"
+        ><img src="assets/netflix_logo.png" alt="logo" style="width: 100px"
       /></a>
     </div>
   </nav>
@@ -136,7 +140,9 @@ p {
             aria-describedby="basic-addon2"
           />
         </div>
-        <div><h5>Language:</h5></div>
+        <div class="d-flex flex-column mt-2">
+
+          <h5 class="text-muted">Language</h5>
         <div class="langSelect">
           <select name="language" id="Language">
             <option value="english">English</option>
@@ -147,52 +153,36 @@ p {
         </div>
         <hr />
       
-      <div><h5>Maturity Settings:</h5></div>
-        <h6 class="rating">ALL MATURITY RATINGS</h6>
-        <div>
-          <p class="maturityText">
-            Show titles of all maturity ratings for this profile
-          </p>
-        </div>
-        <h6 class="edit">E D I T</h6>
-        
-        <hr />
-        <div><h5>Autoplay controls</h5></div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <input
-                type="checkbox"
-                class="check"
-                aria-label="Checkbox for following text input"
-              />
-            </div>
-          </div>
-          <p class="checkboxText">
-            Autoplay next episode in a series on all devices
-          </p>
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <input
-                type="checkbox"
-                aria-label="Checkbox for following text input"
-              />
-            </div>
-          </div>
-          <p class="checkboxText">
-            Autoplay previews while browsing on all devices
-          </p>
-        </div>
+        <div class="d-flex flex-column mt-2">
+
+          <h4 class="text-muted">Maturity Settings</h4>
+          <button class="btn btn-secondary mt-4 w-50 mb-4">ALL MATURITY SETTINGS</button>
+
+          <p class="text-light mt-2">Show files for all maturity settings for this profile.</p>
+
+          <button class="btn btn-outline-secondary mt-2  w-25">EDIT</button>
+
       </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-7">
+
         <hr />
-      </div>
-    </div>
-  </div>
+            <div class="mt-2">
+              <h4 class="text-muted">Autoplay Controls</h4>
+                  <div class="row mt-5">
+                      <div class="col-md-1">
+                          <input class="form-check-input btn-secondary" type="checkbox">
+                        </div>
+                        <div class="col-md-11">Autoplay next episode in a series on all devices</div>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-1">
+                                <input class="form-check-input btn-secondary" type="checkbox">
+                            </div>
+                            <div class="col-md-11">Autoplay next episode in a series on all devices</div>
+                        </div>
+                   </div>
+                </div>
+            </div>
 
   <div class="container mt-3">
     <div class="row justify-content-center">
