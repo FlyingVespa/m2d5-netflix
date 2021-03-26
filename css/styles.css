@@ -1,9 +1,10 @@
-h1 {
-  color: red;
-  font-family: Arial;
-  text-align: center;
+h5 {
+  color: #fff;
 }
 
+body {
+  background-color: black;
+}
 .coverimage {
   display: flex;
   overflow-x: scroll;
@@ -16,17 +17,16 @@ h1 {
   justify-content: center;
   margin: 0 auto;
   padding: 0 !important;
-  width: 99%;
-   transition: 250ms all;
+  width: 100%;
+  transition: 250ms all;
   -webkit-filter: brightness(50%);
   z-index: -1 !important;
-
 }
 
 .coverimage:hover {
   -webkit-filter: brightness(100%);
-  margin: 0 40px;
-  transform: scale(1.2);
+
+  transform: scale(1.1);
 
   cursor: pointer;
   z-index: 100 !important;
@@ -46,6 +46,9 @@ h1 {
   body {
     background-color: blue;
   }
+  .coverimage {
+    padding: 0 im !important;
+  }
 }
 
 /* On screens that are 600px or less, set the background color to olive */
@@ -59,13 +62,12 @@ h1 {
   font-size: 2rem;
 }
 
-.row{
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x)/ -2);
-    margin-left: calc(var(--bs-gutter-x)/ -2);
-}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
 }

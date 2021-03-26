@@ -18,10 +18,10 @@
     <link href="css/styles.css" rel="stylesheet" />
     <title>Netflix</title>
   </head>
-  <body>
+  <body onload="checkCookies()">
     <div class="container-fluid">
       <div class="media-slider m-3">
-        <h5 class="text mt-1 mb-4">Watch List</h5>
+        <h5 class="text mt-1 mb-4">Trending Now</h5>
         <div id="watchlist" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -49,7 +49,7 @@
               </div>
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="3000">
               <div class="media-row">
                 <div class="row">
                   <div class="col-sm-12 m-sm-0 p-sm-2 col-md-2">
@@ -97,7 +97,7 @@
         </div>
       </div>
       <div class="media-slider m-3">
-        <h5 class="text mt-1 mb-4">TV Series List</h5>
+        <h5 class="text mt-1 mb-4">Watch It Again</h5>
         <div id="tvseries" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -124,7 +124,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="500">
               <div class="media-row">
                 <div class="row">
                   <div class="col-sm-12 m-sm-0 p-sm-2 col-md-2">
@@ -172,7 +172,7 @@
         </div>
       </div>
       <div class="media-slider m-3">
-        <h5 class="text mt-1 mb-4">Movies List</h5>
+        <h5 class="text mt-1 mb-4">New Releases</h5>
         <div id="movies" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -199,7 +199,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="2000">
               <div class="media-row">
                 <div class="row">
                   <div class="col-sm-12 m-sm-0 p-sm-2 col-md-2">
